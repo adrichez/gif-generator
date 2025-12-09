@@ -99,6 +99,13 @@ Todos los demás módulos (`os`, `sys`, `shutil`, `subprocess`, `pathlib`, `thre
 
 ## 💻 Instalación
 
+Puedes instalar y ejecutar el proyecto usando **entorno virtual de Python** o **Conda**. Ambas opciones son válidas; elige la que prefieras.
+
+
+
+
+### 🔹 Opción 1: Instalación con entorno virtual de Python (recomendada)
+
 1. **Clonar el repositorio:**
 
 ```bash
@@ -106,21 +113,54 @@ git clone https://github.com/tu-usuario/gif-generator.git
 cd gif-generator
 ```
 
-2. **Crear un entorno virtual (recomendado):**
+2. **Crear un entorno virtual:**
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
 ```
 
-3. **Instalar dependencias (si hubiera):**
+3. **Activar el entorno virtual:**
+
+```bash
+# macOS / Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+4. **Instalar dependencias:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> ⚠️ Por ahora, `requirements.txt` solo especifica la versión de Python, ya que todas las librerías usadas son estándar.
+> ⚠️ Actualmente, `requirements.txt` solo especifica la versión de Python, ya que el proyecto utiliza únicamente librerías estándar.
+
+
+
+
+### 🔹 Opción 2: Instalación usando Conda
+
+1. **Crear un entorno Conda:**
+
+```bash
+conda create -n gif-generator python=3.12
+```
+
+2. **Activar el entorno:**
+
+```bash
+conda activate gif-generator
+```
+
+3. **Instalar dependencias:**
+
+```bash
+pip install -r requirements.txt
+```
+
+> Con cualquiera de las dos opciones, ya se podrá ejecutar el script principal.
 
 
 
