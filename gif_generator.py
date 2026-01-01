@@ -249,7 +249,7 @@ def interactive_create_mode(base_generated_dir: str):
 
     fps = int_or_default(input(f" -> FPS [30]: "), 30)
     width = int_or_default(input(f" -> Ancho [1280]: "), 1280)
-    speed = float_or_default(input(f" -> Factor de velocidad [1.0]: "), 1.0)
+    speed = float_or_default(input(f" -> Factor de duración [1.0]: "), 1.0)
 
     out_path = build_output_path_from_input(input_file, base_generated_dir, "_generated")
     os.makedirs(base_generated_dir, exist_ok=True)
